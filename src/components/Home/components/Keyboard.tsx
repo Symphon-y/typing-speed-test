@@ -1,4 +1,4 @@
-import { QWERTY } from '@/assets/QERTY';
+import { QWERTY } from '@/assets/QWERTY';
 import KeyRowGenerator from '@/components/Keyboard/KeyRowGenerator';
 import { Box } from '@mui/material';
 import React from 'react';
