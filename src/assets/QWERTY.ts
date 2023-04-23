@@ -82,6 +82,7 @@ export const QWERTY: KeyBoardLayoutType = [
     keyCodes.ControlLeft,
     keyCodes.AltLeft,
     keyCodes.MetaLeft,
+    keyCodes.Space,
     keyCodes.AltRight,
     keyCodes.ArrowLeft,
     keyCodes.ArrowUp,

@@ -73,8 +73,8 @@ export const keyCodes: KeyCodeDictionaryType = {
   Space: { key: ' ', code: 'Space' },
   MetaRight: { key: 'Meta', code: 'MetaRight' },
   AltRight: { key: 'Alt', code: 'AltRight' },
-  ArrowLeft: { key: 'ArrowLeft', code: 'ArrowLeft' },
-  ArrowUp: { key: 'ArrowUp', code: 'ArrowUp' },
-  ArrowDown: { key: 'ArrowDown', code: 'ArrowDown' },
-  ArrowRight: { key: 'ArrowRight', code: 'ArrowRight' },
+  ArrowLeft: { key: 'Left', code: 'ArrowLeft' },
+  ArrowUp: { key: 'Up', code: 'ArrowUp' },
+  ArrowDown: { key: 'Down', code: 'ArrowDown' },
+  ArrowRight: { key: 'Right', code: 'ArrowRight' },
 };

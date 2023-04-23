@@ -6,19 +6,10 @@ import React from 'react';
 const Keyboard = () => {
   //TODO: set this in context
   const board = QWERTY;
-  const color: { [key: string]: string } = {
-    0: 'red',
-    1: 'yellow',
-    2: 'green',
-    3: 'blue',
-    4: 'pink',
-    5: 'purple',
-    6: 'orange',
-  };
+
   const content = board.map((row, index) => {
-    const clr: string = color[index];
     return (
-      <div key={index} style={{ backgroundColor: `${color[index]}` }}>
+      <div key={index} style={{ backgroundColor: '#292929' }}>
         <KeyRowGenerator key={index} keyRow={row} />
       </div>
     );
