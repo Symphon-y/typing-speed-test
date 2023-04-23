@@ -1,4 +1,6 @@
-export const keyCodes = {
+import { KeyCodeDictionaryType } from '@/types/keyboardTypes';
+
+export const keyCodes: KeyCodeDictionaryType = {
   Escape: { key: 'Escape', code: 'Escape' },
   F1: { key: 'F1', code: 'F1' },
   F2: { key: 'F2', code: 'F2' },

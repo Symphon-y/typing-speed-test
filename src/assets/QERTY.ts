@@ -1,6 +1,7 @@
+import { KeyBoardLayoutType } from '@/types/keyboardTypes';
 import { keyCodes } from './keyCodes';
 
-export const QWERTY = [
+export const QWERTY: KeyBoardLayoutType = [
   [
     keyCodes.Escape,
     keyCodes.F1,

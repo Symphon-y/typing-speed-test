@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import Keyboard from '../components/Keyboard';
 
 const SpeedTest = () => {
   const handleKeyDown = (e: KeyboardEvent) => {
@@ -13,7 +14,11 @@ const SpeedTest = () => {
     };
   }, []);
 
-  return <>Hello World</>;
+  return (
+    <>
+      Hello World <Keyboard />
+    </>
+  );
 };
 
 export default SpeedTest;
