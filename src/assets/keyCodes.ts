@@ -43,7 +43,7 @@ export const keyCodes: KeyCodeDictionaryType = {
   BracketRight: { key: ']', code: 'BracketRight' },
   Backslash: { key: '\\', code: 'Backslash' },
   CapsLock: { key: 'CapsLock', code: 'CapsLock' },
-  KeyA: { key: 'A', code: 'KeyA' },
+  KeyA: { key: 'a', code: 'KeyA' },
   KeyS: { key: 's', code: 'KeyS' },
   KeyD: { key: 'd', code: 'KeyD' },
   KeyF: { key: 'f', code: 'KeyF' },
