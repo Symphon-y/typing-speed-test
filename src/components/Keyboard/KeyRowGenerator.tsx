@@ -9,6 +9,8 @@ interface props {
 const KeyRowGenerator = ({ keyRow }: props): ReactElement => {
   let row: JSX.Element[] = [];
 
+  //TODO Switch statement for key width
+
   row = keyRow.map((key) => {
     const legend = key?.key;
     const code = key?.code;
