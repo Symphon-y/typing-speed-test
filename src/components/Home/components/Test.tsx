@@ -1,18 +1,14 @@
 import { TextField } from '@mui/material';
 import React from 'react';
 const style = {
-  backgroundColor: '#292929',
+  alignSelf: 'center',
+  backgroundColor: 'white',
+  width: '50rem',
 };
 const Test = () => {
   return (
     <>
-      <TextField
-        fullWidth
-        id='standard-basic'
-        label='Standard'
-        variant='standard'
-        sx={style}
-      />{' '}
+      <TextField id='standard-basic' variant='standard' sx={style} />{' '}
     </>
   );
 };

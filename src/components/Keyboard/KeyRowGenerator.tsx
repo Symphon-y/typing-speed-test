@@ -15,7 +15,7 @@ const KeyRowGenerator = ({ keyRow }: props): ReactElement => {
     const legend = key?.key;
     const code = key?.code;
     let width = '4rem';
-    let color = '#292929';
+    let color = 'transparent';
 
     const keyWidth: { [key: string]: string } = {
       Escape: '6rem',
@@ -25,24 +25,27 @@ const KeyRowGenerator = ({ keyRow }: props): ReactElement => {
       CapsLock: '8rem',
       ShiftLeft: '12rem',
       ShiftRight: '12rem',
-      Space: '20rem',
+      Space: '30rem',
     };
-
-    console.log('width is', width);
 
     return (
       <Grid
         sx={{ backgroundColor: color }}
         height='4rem'
         width={keyWidth[code] ? keyWidth[code] : '4rem'}
-        key={code}>
+        key={code}
+        padding='.25rem'>
         {legend ? legend : code}
       </Grid>
     );
   }) as JSX.Element[];
 
   return (
-    <Grid display='flex' flexDirection='row' width='100%'>
+    <Grid
+      display='flex'
+      flexDirection='row'
+      width='100%'
+      justifyContent='space-between'>
       {row}
     </Grid>
   );

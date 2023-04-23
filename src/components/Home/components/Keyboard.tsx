@@ -1,6 +1,6 @@
 import { QWERTY } from '@/assets/QWERTY';
 import KeyRowGenerator from '@/components/Keyboard/KeyRowGenerator';
-import { Box } from '@mui/material';
+import { Box, Paper } from '@mui/material';
 import React from 'react';
 
 const Keyboard = () => {
@@ -9,7 +9,7 @@ const Keyboard = () => {
 
   const content = board.map((row, index) => {
     return (
-      <div key={index} style={{ backgroundColor: '#292929' }}>
+      <div key={index}>
         <KeyRowGenerator key={index} keyRow={row} />
       </div>
     );
@@ -23,7 +23,16 @@ const Keyboard = () => {
         width='100vw'
         justifyContent='center'
         alignItems='center'>
-        {content}
+        <Paper
+          elevation={3}
+          sx={{
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'center',
+            alignItems: 'space-between',
+          }}>
+          {content}
+        </Paper>
       </Box>
     </>
   );
