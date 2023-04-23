@@ -3,11 +3,12 @@ import { TextField, Typography } from '@mui/material';
 import React, { useContext } from 'react';
 const style = {
   alignSelf: 'center',
+  color: '#292929',
   backgroundColor: 'white',
   width: '50rem',
 };
 const Test = () => {
-  const { setUserInput } = useContext(SpeedTestContext);
+  const { test, setUserInput } = useContext(SpeedTestContext);
 
   const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const { value } = event.target;
@@ -16,6 +17,7 @@ const Test = () => {
 
   return (
     <>
+      <Typography sx={style}>{test}</Typography>
       <TextField
         onChange={handleInputChange}
         label='value'
