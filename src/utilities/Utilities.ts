@@ -14,4 +14,8 @@ export class Utilities {
   copyToClipboard = async (text: string): Promise<void> => {
     await navigator.clipboard.writeText(text);
   };
+
+  randomNumber = (x: number = 100): number => {
+    return Math.floor(Math.random() * x) + 1;
+  };
 }
